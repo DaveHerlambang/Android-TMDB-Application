@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/grey">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/dark">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/foto2"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/namaProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="David Putra Herlambang"
+        android:layout_below="@id/cardProfile"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_bold"/>
+    <TextView
+        android:id="@+id/emailProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/namaProfile"
+        android:text="putradave@gmail.com"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <TextView
+        android:id="@+id/contactProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/emailProfile"
+        android:text="+62 823 4809 7650"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"/>\
+    <ScrollView
+        android:layout_below="@id/contactProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/contactProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/educationProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Education :"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/universityprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Institut Sains dan Teknologi Terpadu Surabaya (Informatic Engineering)"
+                android:textSize="14dp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:fontFamily="@font/crimson_text_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- Android Studio"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- C++/C#"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- Java"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- JavaScript"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- MySQL/Oracle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- HTML/CSS"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- Visual Studio"/>
+
+            <TextView
+                android:id="@+id/highSchoolProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="SMA Negeri 2 Palu (IPS)"
+                android:textSize="14dp"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:fontFamily="@font/crimson_text_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- English Club Vice Chairman"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/experienceProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Working Experience"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/internProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Android Developer at PT. Asahan.Net (2018-2019)"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:fontFamily="@font/crimson_text_regular"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:text="- Creating Android system and handles databases"/>
+
+            <Button
+                android:id="@+id/buttonProfile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Back to Home"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button"
+                android:onClick="moveToHome"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
